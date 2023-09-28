@@ -5,13 +5,14 @@ ZSH_THEME="agnoster"
 
 # zplug auto-install
 [[ -d ~/.zplug ]] || {
-  curl -fLo ~/.zplug/zplug --create-dirs git.io/zplug
-  source ~/.zplug/zplug
+  curl -sL --proto-redir -all,https \
+    https://raw.githubusercontent.com/zplug/installer/master/installer.zsh \
+    | zsh
   zplug update --self
 }
 
 # zplug settings
-export ZPLUG_HOME=/usr/local/opt/zplug
+export ZPLUG_HOME=~/.zplug
 source $ZPLUG_HOME/init.zsh
 
 # zsh plugins with zplug
