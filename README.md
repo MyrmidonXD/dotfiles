@@ -1,6 +1,6 @@
 # dotfiles
 
-A repository for saving personal dotfiles.
+A repository for saving my personal dotfiles.
 
 # Additional Installation Steps
 
